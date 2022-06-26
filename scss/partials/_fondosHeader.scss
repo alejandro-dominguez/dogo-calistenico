@@ -1,0 +1,32 @@
+/*fondos header*/
+
+$fondos:(
+    "home": url(../img/header.incio.jpg),
+    "planificaciones": url(../img/header.planificaciones.jpg),
+    "clases": url(../img/header.clases.jpg),
+    "testimonios": url(../img/header.testimonios.jpg),
+);
+
+.fondo-header-home{
+    height: 80vh;
+    background-image: map-get($fondos , home);
+    @include background(center, no-repeat , cover , 0px 5px 8px -1px rgb(22, 22, 22) );
+}
+
+.fondo-header-planificaciones{ 
+    height: 54vh;
+    background-image: map-get($fondos , planificaciones);
+    @include background(center, no-repeat , cover , 0px 5px 8px -1px rgb(22, 22, 22) );
+}
+
+.fondo-header-clases{
+    height: 70vh;
+    background-image: map-get($fondos , clases);
+    @include background(bottom, no-repeat , cover , 0px 5px 8px -1px rgb(22, 22, 22) );
+}
+
+.fondo-header-testimonios{
+    height: 50vh;
+    background-image: map-get($fondos , testimonios);
+    @include background(top, no-repeat , cover , 0px 5px 8px -1px rgb(22, 22, 22) )
+}

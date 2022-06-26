@@ -1,0 +1,157 @@
+/*Inicio*/
+
+.logo-nav{
+    @include svg (58px, inline);
+}
+
+.navbar-toggler{
+    border: 0.188em solid $azul-claro;
+    background-color: #0000007e;
+
+    &-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2814, 141, 219, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.nav-link:focus{
+    color: $blanco;
+}
+
+.nav-boton{
+    width: max-content;
+    color: $blanco;
+    @include fontsize(1rem, 600);
+    background-color: $azul-oscuro;
+    border-radius: 1em;
+    border: solid 0.35em $azul-claro;
+
+    &:hover, &:focus{
+        color: $blanco;
+        background-color: $azul-claro;
+        transition: all 0.15s ease-in;
+    }
+}
+
+.activo{
+    background-color: $azul-claro;
+
+    &:hover, &:focus{
+        background-color: $azul-oscuro;
+        border-color: $azul-oscuro;
+        transition: all 0.15s ease-in;
+    }
+}
+
+.contenedor-titulo{
+    display: flex;
+    justify-content: center;
+
+    &-contacto{
+        @extend .contenedor-titulo;
+        background-color: $gris;
+    }
+}
+
+.titulo-header{
+        color: $blanco;
+        text-align: center;
+        text-shadow: 0.08em 0.08em rgb(15, 15, 15);
+        @include fontsize(2.25rem, 800);
+    
+
+    &-pregunta{
+        text-align: center;
+        margin-top: 0.1em;
+        @include fontsize(1.75rem, 700);
+    }
+
+    &-contacto{
+        text-shadow: none;
+        margin-bottom: 2rem;
+    }
+}
+
+.columna{
+    @include flexcolumn(flex, column , center);
+    gap: 1.5rem;
+
+    &-contacto{
+        @extend .columna;
+        gap: 0rem;
+    }
+}
+
+.carousel-inner{
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(14, 141, 219, 0.5);
+}
+
+#carousel2{
+    margin-bottom: 0.5rem;
+}
+
+.accordion{
+    height: 29rem;
+    margin-bottom: 1rem;
+
+    &-item{
+        border: none!important;
+        border-color: transparent!important;
+        background-color: $azul-oscuro!important;
+    }
+
+    &-button{
+        background-color: $azul-oscuro;
+        padding: 1rem!important;
+        
+        &:not(.collapsed){
+            color: $azul-oscuro;
+            background-color: $blanco;
+        }
+
+        &::after{
+            background-image: url(../img/flecha-accordion.svg);
+        }
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    &-body{
+        background-color: $azul-claro;
+    }
+
+    &-p{
+        color: $blanco;
+        @include fontsize(1.2rem, 400);
+        text-align: left;
+    }
+}
+
+.collapse-titulo{
+    color: $blanco;
+    @include fontsize(1.5rem, 600);
+    text-align: left;
+}
+
+.container-background{
+    background-color: $gris;
+}
+
+.logo-footer{
+    @include svg (139px, inline);
+}
+
+.footer-item{
+    @include svg (51px, inline);
+    
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+}

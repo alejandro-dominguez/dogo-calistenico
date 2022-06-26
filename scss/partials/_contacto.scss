@@ -1,0 +1,62 @@
+/*Contacto*/
+
+.navbar-contacto{
+    background-color: $gris;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 1.563em;
+    width: 50%;
+    height: 30rem;
+    background-color: $blanco;
+    border-radius: 1.25em;
+    box-shadow: 2px 2px 5px $negro;
+
+    &-etiqueta{
+        height: fit-content;
+        color: $gris;
+        @include fontsize(1.5rem, 700);
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+    }
+    
+    &-input{
+        height: fit-content;
+        outline: none;
+        width: 100%;
+        color: $negro;
+        @include fontsize(1rem, 500);
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 1em;
+    }
+    
+    &-textarea{
+        outline: none;
+        resize: none;
+        width: 100%;
+        @include fontsize(1rem, 500);
+        text-align: left;
+        background-color: transparent;
+        border: none;
+    }
+    
+    &-enviar{
+        width: fit-content;
+        margin: 1.25em 0em;
+        color: $negro;
+        @include fontsize(1.2rem, 600);
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+            color: $azul-claro;
+        }
+    }
+}

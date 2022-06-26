@@ -1,0 +1,20 @@
+/*Clases presenciales*/
+
+.mapa{
+    border-radius: 0.75em;
+    width: 35%; 
+    height: 18.75em;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px rgba(14, 141, 219, 0.6);
+}
+
+.reloj{
+    @include svg (51.78px, inline);
+}
+.ubicacion{
+    @include svg (36.84px, inline);
+}
+
+.ejercicio{
+    @include svg (38.31px, inline);
+}

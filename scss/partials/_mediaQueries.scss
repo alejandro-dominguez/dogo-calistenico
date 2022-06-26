@@ -1,0 +1,207 @@
+/*media queries*/
+
+@media only screen and (min-width: 1441px){
+    .trama{
+        background-size: 5%;
+    }
+
+    .parrafo{
+        width: 40%;
+    }
+
+    .accordion{
+        height: 27.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mapa{
+        width: 25%;
+    }
+
+    .formulario{
+        width: 40%;
+    }
+}
+
+$fondosMd:(
+    "homeMd": url(../img/header.incio.md.jpg),
+    "planificacionesMd": url(../img/header.planificaciones.md.jpg),
+    "clasesMd": url(../img/header.clases.md.jpg),
+    "testimoniosMd": url(../img/header.testimonios.md.jpg),
+);
+
+@media only screen and (max-width: 1199px){
+    .fondo-header-clases{
+        background-image: map-get($fondosMd, clasesMd);
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .navbar{
+        padding-top: 2rem;
+    }
+
+    .nav-mobile{
+        @include flexcolumn(flex, column , center);
+    }
+
+    .nav-boton{
+        @include fontsize(0.9rem, 600);
+        text-align: center;
+        width: 13.96rem;
+    }
+
+    .fondo-header-home{
+        height: 95vh;
+        background-image: map-get($fondosMd, homeMd);
+    }
+
+    .fondo-header-planificaciones{ 
+        height: 95vh;
+        background-image: map-get($fondosMd, planificacionesMd);
+    }
+
+    .fondo-header-clases{
+        height: 95vh;
+    }
+
+    .fondo-header-testimonios{
+        background-image: map-get($fondosMd, testimoniosMd);
+        height: 95vh;
+    }
+
+    .trama{
+        background-image: none;
+    }
+
+    .titulo{
+        @include fontsize(1rem, 700);
+
+        &-margen{
+            margin-top: -0.75rem;  
+        }
+    }
+
+    .subtitulo{
+        @include fontsize(1.2rem, 600);
+    }
+
+    .parrafo{
+        @include fontsize(1rem, 400);
+        width: 80%;
+        overflow-wrap: break-word;
+
+        &-contacto{
+            width: 90%;
+        }
+    }
+
+    .titulo-header{
+        @include fontsize(1.5rem, 800);
+        overflow-wrap: break-word;
+    
+        &-pregunta{
+            @include fontsize(1.2rem, 700);
+            overflow-wrap: break-word;
+        }
+    }
+
+    p, h1, h2, h3, h4, span{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        overflow-wrap: break-word;
+    }
+
+    .accordion{
+        height: 36rem;
+        margin-bottom: 1rem;
+        
+        &-p{
+            @include fontsize(1rem, 400);
+        }
+    }
+    
+    .collapse-titulo{
+        @include fontsize(1.2rem, 600);
+    }
+
+    .footer-mobile{
+        @include flexcolumn(flex, column , center);
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .boton{
+        @include fontsize(0.9rem, 600);
+    }
+
+    .mapa{
+        width: 70%;
+    }
+
+    .card-testimonios{
+        height: auto;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    .formulario{
+        @include flexcolumn(flex, column , center);
+        width: 70%;
+        height: 60%;
+
+        &-etiqueta{
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+    
+        &-input{
+            text-align: center;
+            margin-bottom: 2em;
+        }
+    
+        &-textarea{
+            text-align: center;
+        }
+    }
+}
+
+$fondosSm:(
+    "homeSm": url(../img/header.incio.sm.jpg),
+    "planificacionesSm": url(../img/header.planificaciones.sm.jpg),
+    "clasesSm": url(../img/header.clases.sm.jpg),
+    "testimoniosSm": url(../img/header.testimonios.sm.jpg),
+);
+
+@media only screen and (max-width: 589px){
+    
+    .fondo-header-home{
+        background-image: map-get($fondosSm, homeSm);
+        background-position: bottom;
+    }
+
+    .fondo-header-planificaciones{ 
+        background-image: map-get($fondosSm, planificacionesSm);
+        background-position: bottom;
+    }
+
+    .fondo-header-clases{ 
+        background-image: map-get($fondosSm, clasesSm);
+        background-position: bottom;
+    }
+
+    .fondo-header-testimonios{ 
+        background-image: map-get($fondosSm, testimoniosSm);
+        background-position: top;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .parrafo-margen{
+        margin-top: 1rem;
+    }
+}

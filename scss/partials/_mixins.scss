@@ -1,0 +1,30 @@
+@mixin background($position, $repeat, $size, $shadow) {
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    box-shadow: $shadow;
+}
+
+@mixin svg($width, $display){
+    width: $width;
+    display: $display;
+}
+
+@mixin flexcolumn($display, $direction, $align) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin card($height, $bordercolor, $radius, $color, $shadow) {
+    height: $height;
+    border-color: $bordercolor;
+    border-radius: $radius;
+    background-color: $color;
+    box-shadow: $shadow;
+}
+
+@mixin fontsize($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}

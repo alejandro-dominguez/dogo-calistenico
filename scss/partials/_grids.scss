@@ -1,0 +1,22 @@
+/*grids*/
+
+.grid{
+    display: grid;
+    height: 100vh;
+    row-gap: 1.5em;
+    
+    &-home{
+        @extend .grid;
+        grid-template-rows: 1fr 1fr auto 1fr auto;
+    }
+
+    &-planificaciones{
+        @extend .grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    &-3-filas{
+        @extend .grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

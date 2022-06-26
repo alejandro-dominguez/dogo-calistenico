@@ -1,0 +1,78 @@
+/*Planificaciones online*/
+
+.card{
+    @include card(17rem, transparent , 1rem , #121214 , 2px 2px 5px rgba(159, 161, 165, 0.5) );
+
+    &-testimonios{
+        @include card(21rem, transparent , 1rem , $azul-claro , 2px 2px 5px rgba(120, 206, 255, 0.678) );
+    }
+    
+    &-img-top{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    &-title{
+        color: $blanco;
+        @include fontsize(1.2rem, 600);
+        text-align: center;
+    }
+
+    &-text{
+        color: $blanco;
+        @include fontsize(0.8rem, 500);
+        text-align: center;
+        
+        &-contraste{
+            text-shadow: 0.115em 0.115em $azul-oscuro;
+        }
+
+    }
+}
+
+.almanaque{
+    margin-top: 1.75rem;
+    @include svg (72.23px, inline);
+}
+
+.experiencia{
+    margin-top: 1.75rem;
+    @include svg (61.22px, inline);
+}
+
+.lugares{
+    margin-top: 1.75rem;
+    @include svg (53.83px, inline);
+}
+
+.materiales{
+    margin-top: 1.75rem;
+    @include svg (75px, inline);
+}
+
+.boton{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    color: $blanco;
+    @include fontsize(1rem, 600);
+    padding: 1rem;
+    background-color: $azul-oscuro;
+    border-radius: 1em;
+    border: solid 0.35em $azul-claro;
+    margin-bottom: 1rem;
+
+    &-reset{
+        background-color: transparent;
+        border: none;
+    }
+
+    &:hover, &:focus{
+        color: $blanco;
+        background-color: $azul-claro;
+        transition: all 0.15s ease-in;
+    }
+}

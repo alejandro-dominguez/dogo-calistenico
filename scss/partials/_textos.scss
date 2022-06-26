@@ -1,0 +1,37 @@
+/*textos*/
+
+.titulo{
+    @include fontsize(1.5rem, 700);
+    color: $blanco;
+    padding: 0.6em;
+    background-color: $azul-claro;
+    border-radius: 1em;
+
+    &-margen{
+        @extend.titulo;
+        margin-top: -1.5rem;
+    }
+
+    &-faq{
+        @extend.titulo;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.subtitulo{
+    @include fontsize(1.95rem, 600);
+    color: $blanco;
+    margin-bottom: -1rem;
+}
+
+.parrafo{
+    @include fontsize(1.5rem, 400);
+    color: $blanco;
+    text-align: left;
+    width: 50%;
+    
+    &-contacto{
+        @extend .parrafo;
+        margin-bottom: 2rem;
+    }
+}
