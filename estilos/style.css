@@ -115,18 +115,18 @@ body {
   font-weight: 600;
   background-color: #001BDB;
   border-radius: 1em;
-  border: solid 0.35em #0E8DDB; }
+  border: solid 0.35em #0E8DDB;
+  transition: all 0.15s ease-in; }
   .nav-boton:hover, .nav-boton:focus {
     color: #FFFFFF;
-    background-color: #0E8DDB;
-    transition: all 0.15s ease-in; }
+    background-color: #0E8DDB; }
 
 .activo {
-  background-color: #0E8DDB; }
+  background-color: #0E8DDB;
+  transition: all 0.15s ease-in; }
   .activo:hover, .activo:focus {
     background-color: #001BDB;
-    border-color: #001BDB;
-    transition: all 0.15s ease-in; }
+    border-color: #001BDB; }
 
 .contenedor-titulo, .contenedor-titulo-contacto {
   display: flex;
@@ -204,10 +204,10 @@ body {
 
 .footer-item {
   width: 51px;
-  display: inline; }
+  display: inline;
+  transition: all 0.3s ease-in-out; }
   .footer-item:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out; }
+    transform: scale(1.1); }
 
 /*Planificaciones online*/
 .card {
@@ -272,14 +272,14 @@ body {
   background-color: #001BDB;
   border-radius: 1em;
   border: solid 0.35em #0E8DDB;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: all 0.15s ease-in; }
   .boton-reset {
     background-color: transparent;
     border: none; }
   .boton:hover, .boton:focus {
     color: #FFFFFF;
-    background-color: #0E8DDB;
-    transition: all 0.15s ease-in; }
+    background-color: #0E8DDB; }
 
 /*Clases presenciales*/
 .mapa {
@@ -307,10 +307,10 @@ body {
   width: 170px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px #001BDB; }
+  box-shadow: 2px 2px 5px #001BDB;
+  transition: all 0.3s ease-in-out; }
   .img-testimonios:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out; }
+    transform: scale(1.1); }
 
 /*Contacto*/
 .navbar-contacto {

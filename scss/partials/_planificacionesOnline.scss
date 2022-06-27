@@ -64,6 +64,7 @@
     border-radius: 1em;
     border: solid 0.35em $azul-claro;
     margin-bottom: 1rem;
+    transition: all 0.15s ease-in;
 
     &-reset{
         background-color: transparent;
@@ -73,6 +74,5 @@
     &:hover, &:focus{
         color: $blanco;
         background-color: $azul-claro;
-        transition: all 0.15s ease-in;
     }
 }

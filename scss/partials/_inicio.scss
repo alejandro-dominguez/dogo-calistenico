@@ -28,21 +28,21 @@
     background-color: $azul-oscuro;
     border-radius: 1em;
     border: solid 0.35em $azul-claro;
+    transition: all 0.15s ease-in;
 
     &:hover, &:focus{
         color: $blanco;
         background-color: $azul-claro;
-        transition: all 0.15s ease-in;
     }
 }
 
 .activo{
     background-color: $azul-claro;
+    transition: all 0.15s ease-in;
 
     &:hover, &:focus{
         background-color: $azul-oscuro;
         border-color: $azul-oscuro;
-        transition: all 0.15s ease-in;
     }
 }
 
@@ -149,9 +149,9 @@
 
 .footer-item{
     @include svg (51px, inline);
+    transition: all 0.3s ease-in-out;
     
     &:hover{
         transform: scale(1.1);
-        transition: all 0.3s ease-in-out;
     }
 }
