@@ -308,10 +308,9 @@ body {
   height: 150px;
   border-radius: 50%;
   box-shadow: 2px 2px 5px #001BDB; }
-
-.img-testimonios:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out; }
+  .img-testimonios:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out; }
 
 /*Contacto*/
 .navbar-contacto {
