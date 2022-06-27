@@ -9,12 +9,12 @@
 }
 
 .reloj{
-    @include svg (51.78px, inline);
+    @include svg (51.78px);
 }
 .ubicacion{
-    @include svg (36.84px, inline);
+    @include svg (36.84px);
 }
 
 .ejercicio{
-    @include svg (38.31px, inline);
+    @include svg (38.31px);
 }

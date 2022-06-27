@@ -1,7 +1,7 @@
 /*textos*/
 
 .titulo{
-    @include fontsize(1.5rem, 700);
+    @include fontsize (1.5rem, 700);
     color: $blanco;
     padding: 0.6em;
     background-color: $azul-claro;
@@ -19,13 +19,13 @@
 }
 
 .subtitulo{
-    @include fontsize(1.95rem, 600);
+    @include fontsize (1.95rem, 600);
     color: $blanco;
     margin-bottom: -1rem;
 }
 
 .parrafo{
-    @include fontsize(1.5rem, 400);
+    @include fontsize (1.5rem, 400);
     color: $blanco;
     text-align: left;
     width: 50%;

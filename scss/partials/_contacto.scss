@@ -17,7 +17,7 @@
     &-etiqueta{
         height: fit-content;
         color: $gris;
-        @include fontsize(1.5rem, 700);
+        @include fontsize (1.5rem, 700);
         text-align: left;
         text-transform: uppercase;
         margin-bottom: 0.25em;
@@ -28,7 +28,7 @@
         outline: none;
         width: 100%;
         color: $negro;
-        @include fontsize(1rem, 500);
+        @include fontsize (1rem, 500);
         text-align: left;
         background-color: transparent;
         border: none;
@@ -39,7 +39,7 @@
         outline: none;
         resize: none;
         width: 100%;
-        @include fontsize(1rem, 500);
+        @include fontsize (1rem, 500);
         text-align: left;
         background-color: transparent;
         border: none;
@@ -49,7 +49,7 @@
         width: fit-content;
         margin: 1.25em 0em;
         color: $negro;
-        @include fontsize(1.2rem, 600);
+        @include fontsize (1.2rem, 600);
         text-align: left;
         background-color: transparent;
         border: none;

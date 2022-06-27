@@ -43,11 +43,11 @@ $fondosMd:(
     }
 
     .nav-mobile{
-        @include flexcolumn(flex, column , center);
+        @include flexcolumn;
     }
 
     .nav-boton{
-        @include fontsize(0.9rem, 600);
+        @include fontsize (0.9rem, 600);
         text-align: center;
         width: 13.96rem;
     }
@@ -76,7 +76,7 @@ $fondosMd:(
     }
 
     .titulo{
-        @include fontsize(1rem, 700);
+        @include fontsize (1rem, 700);
 
         &-margen{
             margin-top: -0.75rem;  
@@ -84,11 +84,11 @@ $fondosMd:(
     }
 
     .subtitulo{
-        @include fontsize(1.2rem, 600);
+        @include fontsize (1.2rem, 600);
     }
 
     .parrafo{
-        @include fontsize(1rem, 400);
+        @include fontsize (1rem, 400);
         width: 80%;
         overflow-wrap: break-word;
 
@@ -98,11 +98,11 @@ $fondosMd:(
     }
 
     .titulo-header{
-        @include fontsize(1.5rem, 800);
+        @include fontsize (1.5rem, 800);
         overflow-wrap: break-word;
     
         &-pregunta{
-            @include fontsize(1.2rem, 700);
+            @include fontsize (1.2rem, 700);
             overflow-wrap: break-word;
         }
     }
@@ -118,22 +118,22 @@ $fondosMd:(
         margin-bottom: 1rem;
         
         &-p{
-            @include fontsize(1rem, 400);
+            @include fontsize (1rem, 400);
         }
     }
     
     .collapse-titulo{
-        @include fontsize(1.2rem, 600);
+        @include fontsize (1.2rem, 600);
     }
 
     .footer-mobile{
-        @include flexcolumn(flex, column , center);
+        @include flexcolumn;
         justify-content: center;
         gap: 2rem;
     }
 
     .boton{
-        @include fontsize(0.9rem, 600);
+        @include fontsize (0.9rem, 600);
     }
 
     .mapa{
@@ -150,7 +150,7 @@ $fondosMd:(
     }
 
     .formulario{
-        @include flexcolumn(flex, column , center);
+        @include flexcolumn;
         width: 70%;
         height: 60%;
 

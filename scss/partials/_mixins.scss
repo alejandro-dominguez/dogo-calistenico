@@ -1,25 +1,25 @@
-@mixin background($position, $repeat, $size, $shadow) {
+@mixin background($position) {
     background-position: $position;
-    background-repeat: $repeat;
-    background-size: $size;
-    box-shadow: $shadow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 5px 8px -1px rgb(22, 22, 22);
 }
 
-@mixin svg($width, $display){
+@mixin svg($width){
     width: $width;
-    display: $display;
+    display: inline;
 }
 
-@mixin flexcolumn($display, $direction, $align) {
-    display: $display;
-    flex-direction: $direction;
-    align-items: $align;
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@mixin card($height, $bordercolor, $radius, $color, $shadow) {
+@mixin card($height, $bordercolor, $color, $shadow) {
     height: $height;
     border-color: $bordercolor;
-    border-radius: $radius;
+    border-radius: 1rem;
     background-color: $color;
     box-shadow: $shadow;
 }

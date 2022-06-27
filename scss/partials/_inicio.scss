@@ -1,7 +1,7 @@
 /*Inicio*/
 
 .logo-nav{
-    @include svg (58px, inline);
+    @include svg (58px);
 }
 
 .navbar-toggler{
@@ -24,7 +24,7 @@
 .nav-boton{
     width: max-content;
     color: $blanco;
-    @include fontsize(1rem, 600);
+    @include fontsize (1rem, 600);
     background-color: $azul-oscuro;
     border-radius: 1em;
     border: solid 0.35em $azul-claro;
@@ -60,13 +60,13 @@
         color: $blanco;
         text-align: center;
         text-shadow: 0.08em 0.08em rgb(15, 15, 15);
-        @include fontsize(2.25rem, 800);
+        @include fontsize (2.25rem, 800);
     
 
     &-pregunta{
         text-align: center;
         margin-top: 0.1em;
-        @include fontsize(1.75rem, 700);
+        @include fontsize (1.75rem, 700);
     }
 
     &-contacto{
@@ -76,7 +76,7 @@
 }
 
 .columna{
-    @include flexcolumn(flex, column , center);
+    @include flexcolumn;
     gap: 1.5rem;
 
     &-contacto{
@@ -128,14 +128,14 @@
 
     &-p{
         color: $blanco;
-        @include fontsize(1.2rem, 400);
+        @include fontsize (1.2rem, 400);
         text-align: left;
     }
 }
 
 .collapse-titulo{
     color: $blanco;
-    @include fontsize(1.5rem, 600);
+    @include fontsize (1.5rem, 600);
     text-align: left;
 }
 
@@ -144,11 +144,11 @@
 }
 
 .logo-footer{
-    @include svg (139px, inline);
+    @include svg (139px);
 }
 
 .footer-item{
-    @include svg (51px, inline);
+    @include svg (51px);
     transition: all 0.3s ease-in-out;
     
     &:hover{
