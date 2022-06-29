@@ -9,7 +9,8 @@
 
 body {
   background-color: #282828;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
 
 .trama {
   background-image: url(../img/trama.svg), url(../img/trama.2.svg);
@@ -75,6 +76,7 @@ body {
   .titulo-margen {
     margin-top: -1.5rem; }
   .titulo-faq {
+    background-color: #001BDB;
     margin-bottom: 0.5rem; }
 
 .subtitulo {
@@ -428,9 +430,7 @@ body {
     font-weight: 800;
     overflow-wrap: break-word; }
     .titulo-header-pregunta {
-      font-size: 1.2rem;
-      font-weight: 700;
-      overflow-wrap: break-word; }
+      display: none; }
   p, h1, h2, h3, h4, span {
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -487,6 +487,16 @@ body {
   .fondo-header-testimonios {
     background-image: url(../img/header.testimonios.sm.jpg);
     background-position: top; } }
+
+@media only screen and (min-width: 768px) and (max-width: 890px) {
+  .nav-tablet {
+    display: inline; }
+    .nav-tablet-logo {
+      display: flex;
+      justify-content: center !important; }
+    .nav-tablet-ul {
+      display: flex;
+      justify-content: center; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .parrafo-margen {

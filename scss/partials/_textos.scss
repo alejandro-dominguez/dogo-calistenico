@@ -14,6 +14,7 @@
 
     &-faq{
         @extend.titulo;
+        background-color: $azul-oscuro;
         margin-bottom: 0.5rem;
     }
 }

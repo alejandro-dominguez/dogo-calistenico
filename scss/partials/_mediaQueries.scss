@@ -1,6 +1,7 @@
 /*media queries*/
 
 @media only screen and (min-width: 1441px){
+    
     .trama{
         background-size: 5%;
     }
@@ -31,6 +32,7 @@ $fondosMd:(
 );
 
 @media only screen and (max-width: 1199px){
+    
     .fondo-header-clases{
         background-image: map-get($fondosMd, clasesMd);
     }
@@ -102,8 +104,7 @@ $fondosMd:(
         overflow-wrap: break-word;
     
         &-pregunta{
-            @include fontsize (1.2rem, 700);
-            overflow-wrap: break-word;
+            display: none;
         }
     }
 
@@ -199,7 +200,24 @@ $fondosSm:(
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 890px){
+    
+    .nav-tablet{
+        display: inline;
+
+        &-logo{
+            display: flex;
+            justify-content: center!important;
+        }
+        &-ul{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px){
+    
     .parrafo-margen{
         margin-top: 1rem;
     }
