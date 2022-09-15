@@ -168,6 +168,17 @@ $fondosMd:(
             text-align: center;
         }
     }
+
+    .footer-copy{
+        @include flexcolumn;
+
+        &-img{
+            padding-bottom: 0;
+            width: 10%;
+        }
+    }
+    
+
 }
 
 $fondosSm:(
@@ -197,6 +208,10 @@ $fondosSm:(
     .fondo-header-testimonios{ 
         background-image: map-get($fondosSm, testimoniosSm);
         background-position: top;
+    }
+
+    .footer-copy-img{
+        width: 20%;
     }
 }
 

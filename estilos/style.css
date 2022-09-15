@@ -211,6 +211,20 @@ body {
   .footer-item:hover {
     transform: scale(1.1); }
 
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; }
+  .footer-copy-p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF; }
+  .footer-copy-img {
+    display: block;
+    padding-bottom: 0.8rem;
+    width: 5%; }
+
 /*Planificaciones online*/
 .card {
   height: 17rem;
@@ -472,7 +486,14 @@ body {
       text-align: center;
       margin-bottom: 2em; }
     .formulario-textarea {
-      text-align: center; } }
+      text-align: center; }
+  .footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer-copy-img {
+      padding-bottom: 0;
+      width: 10%; } }
 
 @media only screen and (max-width: 589px) {
   .fondo-header-home {
@@ -486,7 +507,9 @@ body {
     background-position: bottom; }
   .fondo-header-testimonios {
     background-image: url(../img/header.testimonios.sm.jpg);
-    background-position: top; } }
+    background-position: top; }
+  .footer-copy-img {
+    width: 20%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 890px) {
   .nav-tablet {
